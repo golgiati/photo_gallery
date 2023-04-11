@@ -9,12 +9,11 @@ html {
     background-color: #000;
 }
 
+/* setup main grid for .header .nav .main .footer and width for mobile */
 #wrapper {
     max-width: 485px;
     margin: 0 auto;
-    /* setup main grid for .header .nav .main .footer */
     display: grid;
-    /* each one has its own grid column/row*/
     grid-template-columns: 1fr;
     background-color: #000;
 }
@@ -54,7 +53,8 @@ html {
     color: #007d7b;
 }
 
-/* setup grid for everything inside the main (.about .gallery .contact) */
+
+/* setup grid for everything inside the main .about .gallery .contact */
 .main {
     display: grid;
     grid-template-columns: 1fr;
@@ -73,7 +73,7 @@ html {
     padding-bottom: 10px;
 }
 
-/* setup grid for images and text */
+/* setup grid for text row and images row */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -99,7 +99,7 @@ html {
     padding: 10px;
 }
 
-/* setup a grid for the pictures with the captions, 1fr first */
+/* setup a grid to place the images 1 column - 1 row */
 .gallery .images {
     display: grid;
     grid-template-columns: 1fr;
@@ -155,6 +155,7 @@ html {
     bottom:0px;
     right:0px;
     color: #fff;
+    background-color: #333;;
     z-index: 1;
 }
 
@@ -191,15 +192,17 @@ h2 {
 
 /* actual contact form */
 #contact {
-    width: 470px;
+    width: 450px;
     margin: 0 auto;
     margin-top: 20px;
 }
 
 #contact input {
     display: block;
-    width: 470px;
+    width: 450px;
     height: 30px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 ::placeholder {
