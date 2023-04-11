@@ -149,9 +149,9 @@ html {
     position:fixed;
     bottom:0px;
     right:0px;
-    color: #fff;
+    color: #000;
     z-index: 1;
-    background-color: #333;
+    background-color: #fff;
 }
 
 /* Text */
